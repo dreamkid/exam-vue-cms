@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a {
+            background-color: red;
+            /* grid-area: a; */
+            width: 100px;
+            /* display: flex;
+            flex-direction: column; */
+        }
+        
+        .aa {
+            display: inline-block;
+            background-color: blue;
+        }
+        /*         
+        .b {
+            background-color: aqua;
+            grid-area: b;
+        }
+        
+        .c {
+            background-color: blue;
+            grid-area: c;
+        }
+        
+        body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 'a a c' 'a a c' 'a a c';
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <span class="aa">555</span><br>
+        <span class="aa">5566665</span>
+    </div>
+    <div class="user">
+        <div class="user-name my-name">{{item.avatarName}}</div>
+        <div class="user-msg my-msg">{{item.msg}}</div>
+        <!-- <div style="text-align:right">1分钟前</div> -->
+    </div>
+    <!-- <div class="b"></div> -->
+</body>
+<script>
+    var arr = [545, 87, 65, 7, 9, 74, 5121, 8412, 9999, 84, 145, 74];
+
+    function back(i) {
+
+        if (i == 9999) {
+            return i
+        }
+    }
+
+    function find(arr, back) {
+        let res;
+        for (let i = 0; i < arr.length; i++) {
+            res = back(arr[i]);
+            if (res) {
+                break
+            }
+        }
+        return res
+    }
+</script>
+
+</html>
