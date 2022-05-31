@@ -28,7 +28,7 @@
                     <el-timeline-item  v-if="userName">
                         <div class="item">
                             <span>
-                                {{ userName }}&nbsp;发布了任务666699999
+                                {{ userName }}&nbsp;发布了任务868686
                             </span>
                             <span class="tip">
                                 {{dateCorrect(createdAt)}}
