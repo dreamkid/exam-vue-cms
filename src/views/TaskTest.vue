@@ -25,7 +25,7 @@
 
                 <el-timeline class="block-timeline" :reverse="reverse">
 
-                    <el-timeline-item>
+                    <el-timeline-item  v-if="userName">
                         <div class="item">
                             <span>
                                 {{ userName }}&nbsp;发布了任务
@@ -41,7 +41,6 @@
                                 {{ user.userName }}&nbsp; 被作为执行人
                             </span>
                             <span class="tip">
-                                <!-- {{ user }} -->
                             </span>
                         </div>
                     </el-timeline-item>
