@@ -18,8 +18,8 @@
                 <div class="radio">
                     <el-radio-group v-model="reverse">
                         <el-radio :label="true">全部</el-radio>
-                        <el-radio :label="false">只看日志</el-radio>
-                        <el-radio :label="false">只看评论</el-radio>
+                        <el-radio :label="true">只看日志</el-radio>
+                        <el-radio :label="true">只看评论</el-radio>
                     </el-radio-group>
                 </div>
 
