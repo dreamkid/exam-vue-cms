@@ -1,6 +1,6 @@
 <template>
 <el-wrap>
-    <h1 class="user-head">User Management</h1>
+    <h1 class="user-head">User  Management</h1>
     <el-table class="table" size='small' :data="tableData"   style="width: 100%">
         <el-table-column prop="avatarName"  align="center" label="昵称">
         </el-table-column>
