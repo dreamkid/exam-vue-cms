@@ -1,5 +1,5 @@
 <template>
-<div class="box">
+<el-wrap>
     <h1 class="user-head">User Management</h1>
     <el-table class="table" size='small' :data="tableData"   style="width: 100%">
         <el-table-column prop="avatarName"  align="center" label="昵称">
@@ -29,11 +29,11 @@
       </template>
         </el-table-column>
     </el-table>
-    <div v-if="dataTotal" class="mtb-20 bottom" style="padding:0">
+    <div v-if="dataTotal" class="mt-20 bottom" style="padding:0">
         <el-pagination background layout="sizes, prev, pager, next,total" :total="dataTotal" :page-size="pageSize" :page-sizes="[5,10,15,20,30,50]" @size-change="handleSizeChange" @current-change="handleCurrentChange">
         </el-pagination>
     </div>
-</div>
+</el-wrap>
 </template>
 
 <script>
@@ -84,13 +84,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.box{
-padding: 20px;
     .user-head{
     color: #59409e;
+    margin-top: 0;
     padding: 0 40px;
     font-weight: 500;
-}
+
 .table {
 
 

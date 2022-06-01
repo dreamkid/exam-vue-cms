@@ -1,4 +1,5 @@
 <template>
+<el-wrap>
 <div class="block">
     <div class="aside">
         <div class="calendar">
@@ -118,6 +119,7 @@
 
     </div>
 </div>
+</el-wrap>
 </template>
 
 <script>
@@ -255,12 +257,11 @@ export default {
 
 <style lang="scss" scoped>
 .block {
-    background-color: #12b7f5;
     height: 100%;
     min-height: 370px;
     min-width: 815px;
     box-sizing: border-box;
-    padding: 20px;
+    // padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 

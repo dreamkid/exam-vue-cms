@@ -29,12 +29,12 @@
                             <img class="icon-left1" src="../assets/study.png">
                             <span>题库管理</span>
                         </template>
-                        <el-menu-item-group>
+                        <!-- <el-menu-item-group> -->
                             <el-menu-item index="1-1" @click="navigator('page')">题库管理</el-menu-item>
                             <el-menu-item index="1-2" @click="navigator('taskTest')">HTML题库</el-menu-item>
                             <el-menu-item index="1-3">CSS题库</el-menu-item>
                             <el-menu-item index="1-4" @click="navigator('js')">JS题库</el-menu-item>
-                        </el-menu-item-group>
+                        <!-- </el-menu-item-group> -->
                     </el-submenu>
                     <el-menu-item index="2" @click="navigator('createTask')">
                         
@@ -118,11 +118,11 @@ export default {
                 this.navigator('login')
             } else if (res.data.status == 1) {
 
-                this.phone = res.data.data[0].phone;
-                this.id = res.data.data[0].id;
+                this.phone = res.data.data.phone;
+                this.id = res.data.data.id;
                 localStorage.setItem('userId',this.id)
-                this.email = res.data.data[0].email;
-                this.avatarName = res.data.data[0].avatarName;
+                this.email = res.data.data.email;
+                this.avatarName = res.data.data.avatarName;
 
             }
         })

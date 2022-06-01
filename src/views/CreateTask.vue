@@ -1,5 +1,6 @@
 <template>
-<div class="info">
+<el-wrap>
+<!-- <div class="info"> -->
     <div class="box">
         <div class="header">创建任务</div>
         <div class="body">
@@ -33,7 +34,8 @@
             </el-form>
         </div>
     </div>
-</div>
+<!-- </div> -->
+</el-wrap>
 </template>
 
 <script>
@@ -43,6 +45,9 @@ import {
     replaseTaskApi
 } from "@/api/api.js"
 export default {
+    // components: {
+    //     Wrap
+    // },
     data() {
         return {
             options: [],
@@ -196,7 +201,7 @@ export default {
 
 .box {
     background-color: white;
-
+height: 100%;
     & .header {
         padding: 20px 30px;
         font-weight: 700;

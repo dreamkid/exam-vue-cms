@@ -1,6 +1,6 @@
 <template>
 <div class="task-box">
-    <div class="task-test">
+    <el-wrap>
         <div class="test-head">
             <div class="head-title">任务测试</div>
             <div class="head-button">
@@ -47,7 +47,7 @@
                 </el-timeline>
             </div>
         </div>
-    </div>
+    </el-wrap>
     <div class="task-sidebar">
         <div class="sidebar-item">
             <div class="item-box">
@@ -167,9 +167,9 @@ export default {
     display: grid;
     grid-template-columns: 3fr 1fr;
 
-    .task-test {
-        padding: 0 20px;
-overflow: auto;
+//     .task-test {
+//         padding: 0 20px;
+// overflow: auto;
         .test-head {
             border-bottom: 1px solid rgba(128, 128, 128, 0.124);
 
@@ -221,7 +221,7 @@ overflow: auto;
                     }
                 }
             }
-        }
+        // }
 
         // background-color: gray;
     }

@@ -6,6 +6,12 @@ import ElementUI from 'element-ui'
 import './styles.scss'
 import './common.scss'
 import VueSocketIO from 'vue-socket.io'
+
+
+import Wrap from "@/components/WrapComponent.vue"
+Vue.component("el-wrap", Wrap)
+
+
 Vue.use(ElementUI)
     // import 'element-ui/lib/theme-chalk/index.css';
 Vue.config.productionTip = false

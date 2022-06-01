@@ -1,5 +1,5 @@
 <template>
-<div class="page">
+<el-wrap>
     <div class="title">
         <div class="question-type flex-align">
             <span class="type-title">适用考试：</span>
@@ -59,7 +59,7 @@
     </div>
     
 
-</div>
+</el-wrap>
 </template>
 
 <script>
@@ -77,10 +77,7 @@ export default {
 <style lang="scss" scoped>
 
 
-.page {
-    padding: 20px;
-
-    & .title {
+.title {
         background-color: rgba(128, 128, 128, 0.081);
         border-radius: 10px;
         border: 1px solid rgba(128, 128, 128, 0.132);
@@ -90,7 +87,7 @@ export default {
             font-weight: 600;
         }
     }
-}
+
 
 .type-button {
     height: 10px;

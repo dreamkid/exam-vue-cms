@@ -1,5 +1,5 @@
 <template>
-<div class="list-box">
+<el-wrap>
     <div class="list-head">
         <div class="head-title">任务列表</div>
         <div class="flex-align flex-center head-input">
@@ -71,7 +71,7 @@
             </div>
         </el-dialog>
     </div>
-</div>
+</el-wrap>
 </template>
 
 <script>
@@ -252,9 +252,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.list-box {
-    padding: 20px;
-
     .list-head {
         margin-bottom: 20px;
         background-color: white;
@@ -307,5 +304,5 @@ export default {
             }
         }
     }
-}
+
 </style>

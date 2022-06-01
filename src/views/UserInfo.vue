@@ -1,5 +1,5 @@
 <template>
-<div class="info">
+<el-wrap>
     <div class="box">
         <div class="header">基本信息</div>
         <div class="body">
@@ -57,7 +57,7 @@
     <div class="box mt-20">
         <div class="header">企业信息</div>
     </div>
-</div>
+</el-wrap>
 </template>
 
 <script>
@@ -155,9 +155,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.info {
-    padding: 20px;
-}
 
 .box {
     background-color: white;

@@ -1,5 +1,5 @@
 <template>
-<div class="user-box">
+<el-wrap>
     <div class="box-head">新增角色权限</div>
     <div class="box-body">
         <div class="user-name flex-align">
@@ -25,7 +25,7 @@
             <power-use></power-use>
         </div>
     </div>
-</div>
+</el-wrap>
 </template>
 
 <script>
@@ -62,12 +62,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.user-box {
-    
-    padding: 0 20px;
-
     .box-head {
-        padding: 20px 0;
+        // padding: 20;
+        margin-bottom: 20px;
         color: #727f90;
         font-size: 22px;
         font-weight: 500;
@@ -98,7 +95,7 @@ export default {
         }
     }
 
-}
+
 
 ::v-deep .el-popper {
     min-width: 200px;

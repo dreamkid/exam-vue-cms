@@ -1,5 +1,5 @@
 <template>
-<div class="page">
+<el-wrap>
     <div class="mask" v-if="popup">
         <div class="eject">
             <div class="flex-align">
@@ -128,7 +128,7 @@
         </el-pagination>
     </div>
 
-</div>
+</el-wrap>
 </template>
 
 <script>
@@ -201,7 +201,7 @@ export default {
         // })
         infoApi().then(res => {
             if (res.data.status == 1) {
-                this.userId = res.data.data[0].phone;
+                this.userId = res.data.data.phone;
                 if (!localStorage.getItem(this.userId)) {
                     localStorage.setItem(this.userId, JSON.stringify({
                         'pageSize': 10
@@ -511,13 +511,13 @@ console.log(1);
     }
 }
 
-.page {
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: scroll;
-    height: calc(100vh - 60px);
+// .page {
+//     padding: 20px;
+//     box-sizing: border-box;
+//     overflow-y: scroll;
+//     height: calc(100vh - 60px);
 
-    & .title {
+    .title {
         background-color: rgba(128, 128, 128, 0.081);
         border-radius: 10px;
         border: 1px solid rgba(128, 128, 128, 0.132);
@@ -557,7 +557,7 @@ console.log(1);
             }
         }
     }
-}
+// }
 
 .question-card {
     border-radius: 10px;
