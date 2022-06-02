@@ -1,7 +1,7 @@
 <template>
 <el-wrap>
     <div class="box">
-        <div class="header">基本信息</div>
+        <el-title>基本信息</el-title>
         <div class="body">
             <el-form ref="form" :model="form" label-width="80px">
                 <el-form-item class="p-15-30" label="账号昵称">
@@ -158,12 +158,6 @@ export default {
 
 .box {
     background-color: white;
-
-    & .header {
-        padding: 20px 30px;
-        font-weight: 700;
-        border-bottom: 1px solid #f7f7f7;
-    }
 
     & .body {
         padding: 15px 0;

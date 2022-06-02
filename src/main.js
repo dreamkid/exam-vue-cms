@@ -7,10 +7,8 @@ import './styles.scss'
 import './common.scss'
 import VueSocketIO from 'vue-socket.io'
 
-
-import Wrap from "@/components/WrapComponent.vue"
-Vue.component("el-wrap", Wrap)
-
+import GlobalComponent from '@/components/main.js'
+Vue.use(GlobalComponent)
 
 Vue.use(ElementUI)
     // import 'element-ui/lib/theme-chalk/index.css';

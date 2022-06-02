@@ -2,7 +2,7 @@
 <el-wrap>
 <!-- <div class="info"> -->
     <div class="box">
-        <div class="header">创建任务</div>
+        <el-title>创建任务</el-title>
         <div class="body">
             <el-form ref="form" :model="form" label-width="80px">
                 <el-form-item class="task-name p-15-30" label="任务名称">
@@ -202,11 +202,6 @@ export default {
 .box {
     background-color: white;
 height: 100%;
-    & .header {
-        padding: 20px 30px;
-        font-weight: 700;
-        border-bottom: 1px solid #f7f7f7;
-    }
 
     & .body {
         padding: 15px 0;

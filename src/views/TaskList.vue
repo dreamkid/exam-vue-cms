@@ -1,7 +1,7 @@
 <template>
 <el-wrap>
     <div class="list-head">
-        <div class="head-title">任务列表</div>
+        <el-title>任务列表</el-title>
         <div class="flex-align flex-center head-input">
             <div class="flex-align block first-input">
                 <span class="mr-5">任务名称 :</span>
@@ -257,11 +257,6 @@ export default {
         background-color: white;
         box-sizing: border-box;
 
-        .head-title {
-            font-size: 16px;
-            font-weight: 700;
-            padding: 15px 10px;
-        }
 
         .head-input {
             padding: 20px 10px;
